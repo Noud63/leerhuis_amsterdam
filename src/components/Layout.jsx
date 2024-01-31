@@ -1,33 +1,24 @@
 import React from 'react'
-import Calendar from './Calendar';
 import Hero from './Hero';
-import Footer from "./Footer"
+import Menu from './Menu';
+import Header from "./Header.jsx";
+import SidebarRight from "./SidebarRight.jsx";
+import SidebarLeft from "./SidebarLeft.jsx";
+import Footer from "./Footer.jsx";
+import { Outlet } from 'react-router-dom';
 
-const Layout = ({children}) => {
+const Layout = () => {
   return (
-    <div className="w-full h-[1500px] ">
-      {children}
+    <div className="w-[100%] h-auto ">
+      <Header />
+      <SidebarRight />
+      <SidebarLeft />
+
       <Hero />
+      <Menu />
+      <Outlet />
 
-      <div className="menu w-[85%] m-auto mt-12 hidden max-calendar:flex">
-        <div className="w-full text-md max-sm:text-sm grid grid-cols-4 justify-between gap-4 max-xsm:grid-cols-2 max-xsm:gap-2">
-          <div className="menu_btn w-full h-[40px] bg-black mix-blend-darken text-[#ef8b39] rounded-full flex justify-center items-center">
-            over ons
-          </div>
-          <div className="menu_btn w-full h-[40px] bg-black mix-blend-darken text-[#ef8b39] rounded-full flex justify-center items-center">
-            contact
-          </div>
-
-          <div className="menu_btn w-full h-[40px] bg-black mix-blend-darken text-[#ef8b39] rounded-full flex justify-center items-center">
-            beeld
-          </div>
-          <div className="menu_btn w-full h-[40px] bg-black mix-blend-darken text-[#ef8b39] rounded-full flex justify-center items-center">
-            activiteiten
-          </div>
-        </div>
-      </div>
-      <Calendar />
-      
+      <Footer />
     </div>
   );
 }

@@ -1,22 +1,29 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import Layout from './components/Layout.jsx'
-import Header from "./components/Header.jsx";
-import SidebarRight from "./components/SidebarRight.jsx";
-import SidebarLeft from "./components/SidebarLeft.jsx";
-import Footer from './components/Footer.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Root from "./components/Root.jsx";
+import AgendaItems from "./pages/AgendaItems";
+import "./index.css";
+import Layout from "./components/Layout.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Root />,
+      },
+      {
+        path: "/agendaitems",
+        element: <AgendaItems />,
+      },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Layout>
-      <Header />
-      <SidebarRight />
-      <SidebarLeft />
-    </Layout>
-    <Footer />
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

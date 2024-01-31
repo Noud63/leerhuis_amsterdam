@@ -10,12 +10,12 @@ const SidebarRight = () => {
   const scrolled = scroll()
   
   return (
-    <div className="h-[2100px] w-[130px] absolute top-0 right-0 border-l border-black z-5 max-calendar:hidden">
+    <div className="h-[2000px] w-[130px] absolute top-0 right-0 border-l border-black z-5 max-calendar:hidden">
       <div
         className={`${
           scrolled
-            ? "mt-32  transform ease-in-out duration-1000 delay-200"
-            : "mt-44  transform ease-in-out duration-1000 delay-100"
+            ? "mt-36 transform ease-in-out duration-1000 delay-200"
+            : "mt-44 transform ease-in-out duration-1000 delay-100"
         } w-full mb-28 flex justify-center items-center flex-col gap-16`}
       >
         <div className="w-[40px] border border-black h-[40px] text-[#ff3355] text-md rounded-full flex justify-center items-center">
