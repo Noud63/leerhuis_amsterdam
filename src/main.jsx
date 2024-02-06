@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Root from "./components/Root.jsx";
-import AgendaItems from "./pages/AgendaItems";
+import Root from "./components/Root";
+import Aktueel from "./pages/Aktueel";
 import "./index.css";
 import Layout from "./components/Layout.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AllActivities from "./components/AllActivities";
+import InfoCalendarItem from "./components/InfoCalendarItem";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +17,20 @@ const router = createBrowserRouter([
         element: <Root />,
       },
       {
-        path: "/agendaitems",
-        element: <AgendaItems />,
+        path: "/aktueel",
+        element: <Aktueel />,
+      },
+      {
+        path: "/allactivities",
+        element: <AllActivities />,
+      },
+      {
+        path: "allactivities/infocalendaritem/:id",
+        element: <InfoCalendarItem />,
+      },
+      {
+        path: "/infocalendaritem/:id",
+        element: <InfoCalendarItem />,
       },
     ],
   },

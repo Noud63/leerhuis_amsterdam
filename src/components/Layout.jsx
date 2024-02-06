@@ -9,12 +9,12 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
   return (
-    <div className="w-[100%] h-auto ">
+    <div className="w-[100%] h-auto">
       <Header />
       <SidebarRight />
       <SidebarLeft />
-
       <Hero />
+      
       <Menu />
       <Outlet />
 

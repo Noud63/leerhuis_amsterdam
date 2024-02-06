@@ -8,6 +8,7 @@ export default {
         papyrus: ["PAPYRUS"],
       },
       screens: {
+        
         calendar: "850px",
         xsm: "460px"
       },

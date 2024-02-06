@@ -8,13 +8,15 @@ const Header = () => {
 
    const scrolled = scroll()
 
-   const day= new Date().toLocaleDateString().split("-")[0];
+   const day = new Date().toLocaleDateString().split("-")[0];
    const month = new Date().toLocaleString("nl-NL", { month: "short" });
 
   return (
     <div
-      className={`${scrolled ? "-translate-y-[130px]" : "translate-y-0"}
-    header w-full flex justify-between fixed top-0 z-10 border-b border-black transform ease-in-out duration-500 max-sm:h-[90px]`}
+      className={`${
+        scrolled ? "-translate-y-[130px]" : "translate-y-0 delay-100"
+      }
+    header w-full flex justify-between fixed top-0 z-10 border-b border-slate-800 transform ease-in-out duration-500 max-sm:h-[90px]`}
     >
       <Link
         to="/"
@@ -26,9 +28,13 @@ const Header = () => {
       </Link>
 
       <div className="sub_header w-1/2 h-[130px] border-l border-black text-4xl flex justify-between max-sm:flex-1 max-sm:h-[90px]">
-        <Link to="agendaitems" className="flex flex-1">
-          <div className="flex flex-1 justify-center items-center cursor-pointer">
-            <img src={pointingfinger} alt="" className="w-[40px] mr-2" />
+        <Link to="aktueel" className="flex flex-1">
+          <div className="flex flex-1 justify-center items-center cursor-pointer ">
+            <img
+              src={pointingfinger}
+              alt=""
+              className="w-[40px] mr-2 transition ease-in duration-300 hover:translate-x-2"
+            />
             <span className="text-3xl max-sm:text-xl">Aktueel</span>
           </div>
         </Link>
