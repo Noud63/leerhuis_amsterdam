@@ -7,7 +7,7 @@ import logo2 from "../assets/icons/leerhuislogo.png";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[500px] bg-black flex justify-center items-center mt-[600px] text-white">
+    <div className="w-full h-[500px] bg-black absolute flex justify-center items-center  text-white">
       
     </div>
   );

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import  activities from '../db.json'
 
 const Calendar = () => {
-  
+ 
   return (
     <div className="w-[65%] flex justify-center items-center flex-col py-2 m-auto mt-12 max-calendar:w-[85%] border-b border-black pb-16">
       <div className="w-full flex flex-row gap-2 pl-4 mb-6">
@@ -15,7 +15,7 @@ const Calendar = () => {
       </div>
 
       <div className="w-full grid grid-cols-3 gap-4 max-xl:grid-cols-2 max-sm:grid-cols-1">
-        {activities.activities &&
+        {
           activities.activities.slice(0, 3).map((act) => (
             <div className="calendar_item w-full rounded-2xl p-2" key={act.id}>
               <div className="w-full h-full bg-black rounded-xl text-[#ef8b39] px-4 pb-4 pt-4 flex flex-col justify-between gap-2">

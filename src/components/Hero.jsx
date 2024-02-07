@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col relative">
       <div
-        className="w-[65%] flex justify-center items-center flex-col pt-44 pb-4 border-b border-black
+        className="w-[65%] flex justify-center items-center flex-col mt-44 pb-4 border-b border-black
       max-calendar:w-[85%] max-sm:pt-32"
       >
         <span
@@ -23,7 +23,7 @@ const Hero = () => {
         <img
           src={wandelaars}
           alt="wandelaars"
-          className="w-full max-w-[900px]"
+          className="w-full max-w-[900px]"    
         />
       </div>
     </div>

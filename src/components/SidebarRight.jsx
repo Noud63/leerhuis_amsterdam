@@ -10,7 +10,7 @@ const SidebarRight = () => {
   const scrolled = scroll()
   
   return (
-    <div className="h-[2500px] w-[130px] absolute top-0 right-0 border-l border-black z-5 max-calendar:hidden">
+    <div className="w-[130px] absolute top-0 right-0 border-l border-black z-5 max-calendar:hidden">
       <div
         className={`${
           scrolled

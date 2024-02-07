@@ -5,7 +5,7 @@ const SidebarLeft = () => {
   const scrolled = scroll()
 
   return (
-    <div className="w-[130px] h-[2500px] absolute top-0 left-0 border-r border-black max-calendar:hidden">
+    <div className="w-[130px] h-[2000px] absolute top-0 left-0 border-r border-black max-calendar:hidden">
       <div
         className={`${
           scrolled
