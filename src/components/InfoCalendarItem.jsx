@@ -13,16 +13,20 @@ const url = window.location.pathname
 const item = activities.activities[id]
 
   return (
-    <div className="w-[45%] flex justify-center items-center flex-col  m-auto mt-12 max-calendar:w-[85%] border-b border-black pb-16">
-      <div className="text-xl font-semibold mb-8">Over {item.title}</div>
+    <div className="w-[65%] flex justify-center items-center flex-col  m-auto mt-12 max-calendar:w-[85%] border-b border-black pb-16">
+      <div className="w-full flex justify-center text-xl font-semibold mb-8 border-t border-black pt-12">
+        Over {item.title}
+      </div>
       <div
-        className="calendar_item w-full rounded-2xl p-2 relative"
+        className="calendar_item rounded-2xl p-2 relative w-[65%]"
         key={item.id}
       >
         <div className="w-full h-auto bg-black rounded-xl text-[#ef8b39] px-4 pb-4 pt-4 flex flex-col gap-4">
+          <span className="w-full flex justify-end font-bold border-b border-[#ef8b39] pb-2">
+            <span>{`#A0${item.id + 1}`}</span>
+          </span>
           <span className="w-full border-b border-[#ef8b39] flex justify-between font-bold mb-2 text-xl pb-2">
             {item.title}
-            <span>{`#A0${item.id + 1}`}</span>
           </span>
           <span className="w-full">
             <span className="font-bold">Datum: </span>

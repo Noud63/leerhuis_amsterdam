@@ -9,7 +9,7 @@
                         " Sabbat - als oefening in dankbaarheid en vertrouwen. Als verzet tegen verslaving. Als rust voor alle leven. Als schuilplaats van de liefde.",
                         " Op vier woensdagavonden zoeken we een gesprek over sabbat aan de hand van inspirerende teksten uit de joodse en christelijke traditie en van ",
                         "hedendaagse spirituele, sociale en ecologische denkers."],
-        "led_by": "Johan Visser en Gerben van Manen",
+        "led_by": "Johan Visser en\r Gerben van Manen",
         "image": "sabbat.png",
         "starting_data": "17-1-2024"
       },
@@ -19,7 +19,7 @@
         "date": "12-2, 26-2, 11-3",
         "time": "20:00 - 22:00 uur",
         "description": "",
-        "led_by": "Gerben van Manen\n en Wilken van Veen",
+        "led_by": "Gerben van Manen en Wilken van Veen",
         "image": "miskotte.jpg",
         "starting_data": "12-2-2024"
       },
@@ -40,7 +40,7 @@
         "time": "20:00 - 22:00 uur",
         "description": "",
         "led_by": "Johan Visser en Gerben van Manen",
-        "image": "miskotte.jpg",
+        "image": "groengeloven.jpg",
         "starting_data": "17-1-2024"
       },
       {
@@ -50,7 +50,7 @@
         "time": "20:00 - 22:00 uur",
         "description": "",
         "led_by": "Johan Visser\n en Gerben van Manen",
-        "image": "modernetheologen.jpg",
+        "image": "vandis.jpg",
         "starting_data": "17-1-2024"
       },
       {
@@ -60,7 +60,7 @@
         "time": "20:00 - 22:00 uur",
         "description": "",
         "led_by": "Johan Visser en Gerben van Manen",
-        "image": "sabbat.png",
+        "image": "leesgroep_miskotte.jpg",
         "starting_data": "17-1-2024"
       }
     ]

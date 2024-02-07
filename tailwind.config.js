@@ -9,7 +9,7 @@ export default {
       },
       screens: {
         
-        calendar: "850px",
+        calendar: "1160px",
         xsm: "460px"
       },
     },

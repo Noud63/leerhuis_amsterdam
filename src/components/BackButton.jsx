@@ -4,25 +4,25 @@ import arrow from "../assets/icons/left_arrow.png"
 
 const BackButton = (url) => {
 
-const [pad, setPath]= useState("")
+const [path, setPath]= useState("")
 
 useEffect(() => {
 if (
   url.url.slice(0, -1) === "/infocalendaritem/" ||
   url.url === "/allactivities" ||
-  url.url === "/aktueel"
+  url.url === "/aktueel" || url.url === "/"
 ) {
   setPath("/");
 }
 if (url.url.slice(0, -1) === "/allactivities/infocalendaritem/") {
   setPath("/allactivities");
 } 
-},[pad])
+},[path])
 
 return (
     <div className="w-full flex justify-center mt-16">
       <Link
-        to={pad}
+        to={path}
       >
         <button
           type="button"

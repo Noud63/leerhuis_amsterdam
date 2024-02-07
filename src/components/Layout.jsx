@@ -11,10 +11,12 @@ const Layout = () => {
   return (
     <div className="layout w-[100%] h-auto relative">
       <Header />
-      <SidebarRight />
-      <SidebarLeft />
-      <Hero />
-      
+      <div className="w-full flex flex-row">
+        <SidebarLeft />
+        <Hero />
+        <SidebarRight />
+      </div>
+
       <Menu />
       <Outlet />
 

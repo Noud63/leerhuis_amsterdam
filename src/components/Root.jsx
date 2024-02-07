@@ -1,11 +1,12 @@
 import React from 'react'
 import Calendar from './Calendar'
-import Hero from './Hero';
+import Overons from './Overons';
 
 const Root = () => {
   return (
     <>
       <Calendar />
+      <Overons />
     </>
   );
 }

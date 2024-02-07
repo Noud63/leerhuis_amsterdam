@@ -22,7 +22,7 @@ const Header = () => {
         to="/"
         className="w-1/2 h-[130px] flex justify-start items-center max-sm:w-[130px] max-sm:h-[90px] max-xsm:w-[90px]"
       >
-        <div className="w-[130px] h-[130px] bg-black p-7 flex justify-start items-center max-sm:p-9 max-sm:h-[90px] max-xsm:w-[90px] max-xsm:p-5">
+        <div className="w-[150px] h-[130px] bg-black p-7 flex justify-start items-center max-sm:p-9 max-sm:h-[90px] max-xsm:w-[90px] max-xsm:p-5">
           <img src={logo} alt="" className="w-full h-auto" />
         </div>
       </Link>
@@ -39,7 +39,7 @@ const Header = () => {
           </div>
         </Link>
 
-        <div className="w-[130px] h-[130px] flex justify-center items-center flex-col max-xl:border-l border-black max-sm:h-[90px] max-sm:text-2xl max-xsm:w-[90px]">
+        <div className="w-[150px] h-[130px] flex justify-center border-l border-black items-center flex-col max-xl:border-l max-sm:h-[90px] max-sm:text-2xl max-xsm:w-[90px]">
           <span className="font-bold">{day}</span>
           <span className="text-3xl max-sm:text-xl">{month}</span>
         </div>
