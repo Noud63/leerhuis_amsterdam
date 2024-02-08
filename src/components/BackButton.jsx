@@ -26,12 +26,12 @@ return (
       >
         <button
           type="button"
-          className="btn w-[190px] bg-black p-1 text-[#000] rounded-full"
+          className="btn w-[150px] bg-black p-1 text-[#000] rounded-full"
         >
           <div className="bg-[#000] flex flex-row justify-center items-center rounded-full p-2 border-2 border-[#ef8b39] text-[#f19a53] gap-2">
-            <div className="w-[28px] mt-1">
-              <img src={arrow} alt="" />
-            </div>
+            {/* <div className="w-[28px] mt-1">
+              <img src={arrow} alt="arrow" />
+            </div> */}
             <span>Terug</span>
           </div>
         </button>

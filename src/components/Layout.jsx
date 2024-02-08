@@ -6,10 +6,13 @@ import SidebarRight from "./SidebarRight.jsx";
 import SidebarLeft from "./SidebarLeft.jsx";
 import Footer from "./Footer.jsx";
 import { Outlet } from 'react-router-dom';
+import { useRef } from 'react';
 
 const Layout = () => {
+
+  
   return (
-    <div className="layout w-[100%] h-auto relative">
+    <div className="layout w-[100%] relative">
       <Header />
       <div className="w-full flex flex-row">
         <SidebarLeft />

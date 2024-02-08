@@ -3,14 +3,14 @@ import wandelaars from "../assets/images/wandelaars2.png";
 
 const Hero = () => {
   return (
-    <div className="w-full flex flex-1 justify-center items-center flex-col mt-48 max-sm:mt-36">
+    <div className="w-full flex flex-1 justify-center items-center flex-col mt-40 max-sm:mt-36 max-xsm:mt-24">
       <div
         className="w-[66%] flex justify-center items-center flex-col pb-4 
-      max-calendar:w-[85%]"
+      max-calendar:w-[85%] mt-8"
       >
         <span
           className="w-full flex justify-center flex-col items-center bg-transparent font-papyrus text-black
-        text-6xl tracking-widest pb-2 max-xl:text-[3rem] max-sm:text-4xl max-xsm:text-[27px]"
+        text-[3.7rem] tracking-widest pb-2 max-xl:text-[3rem] max-sm:text-4xl max-xsm:text-[27px]"
         >
           Leerhuis Amsterdam
           <span

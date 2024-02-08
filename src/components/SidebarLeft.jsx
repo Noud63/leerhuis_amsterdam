@@ -1,4 +1,6 @@
+import React, {useRef} from 'react'
 import scroll from "../utils/scroll";
+import { Link } from "react-router-dom";
 
 const SidebarLeft = () => {
 
@@ -6,7 +8,7 @@ const SidebarLeft = () => {
 
   return (
     <div className="w-[150px] max-calendar:hidden overflow-visible relative">
-      <div className="w-full absolute h-auto top-0 border-r border-black">
+      <div className="w-full absolute h-full top-0 border-r border-black">
         <div
           className={`${
             scrolled
@@ -17,9 +19,9 @@ const SidebarLeft = () => {
           <div className="w-[100px] flex justify-center">
             <button
               type="button"
-              className="w-[190px] bg-slate-800 p-1 text-[#000] rounded-full cursor-pointer"
+              className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
             >
-              <div className="bg-black rounded-full p-1 border-2 border-[#ef8b39] text-[#f19a53]">
+              <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
                 over ons
               </div>
             </button>
@@ -30,29 +32,30 @@ const SidebarLeft = () => {
               type="button"
               className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
             >
-              <div className="bg-[#000] rounded-full p-1 border-2 border-[#ef8b39] text-[#f19a53]">
+              <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
                 contact
               </div>
             </button>
           </div>
+          <Link to="allactivities">
+            <div className="w-[100px] flex justify-center">
+                <button
+                  type="button"
+                  className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
+                >
+                  <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
+                    acitiviteit
+                  </div>
+                </button>
+            </div>
+          </Link>
 
           <div className="w-[100px] flex justify-center">
             <button
               type="button"
               className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
             >
-              <div className="bg-[#000] rounded-full p-1 border-2 border-[#ef8b39] text-[#f19a53]">
-                activiteit
-              </div>
-            </button>
-          </div>
-
-          <div className="w-[100px] flex justify-center">
-            <button
-              type="button"
-              className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
-            >
-              <div className="bg-[#000] rounded-full p-1 border-2 border-[#ef8b39] text-[#f19a53]">
+              <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
                 archief
               </div>
             </button>

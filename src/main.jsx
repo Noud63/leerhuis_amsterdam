@@ -5,8 +5,11 @@ import Aktueel from "./pages/Aktueel";
 import "./index.css";
 import Layout from "./components/Layout.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AllActivities from "./components/AllActivities";
-import InfoCalendarItem from "./components/InfoCalendarItem";
+import AllActivities from "./pages/AllActivities";
+import InfoCalendarItem from "./pages/InfoCalendarItem";
+import Subscribe from "./pages/Subscribe";
+
+
 
 const router = createBrowserRouter([
   {
@@ -27,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "allactivities/infocalendaritem/:id",
         element: <InfoCalendarItem />,
+      },
+      {
+        path: "subscribe", 
+        element: <Subscribe />
       },
       {
         path: "/infocalendaritem/:id",
