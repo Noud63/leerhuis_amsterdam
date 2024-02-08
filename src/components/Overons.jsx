@@ -5,22 +5,20 @@ import { Link } from 'react-router-dom';
 const Overons = () => {
 
   return (
-    <div className="w-full h-[900px] flex justify-center items-center flex-row">
-      <div className="w-[150px] h-full border-r border-black flex justify-center items-center max-calendar:hidden"></div>
+    <div className="w-full flex justify-center items-center flex-row">
+      <div className="w-[150px] h-[750px] border-r border-black flex justify-center items-center max-calendar:hidden"></div>
 
-      <div className="w-full h-full flex flex-1 justify-center">
-        <div className="w-full h-full flex flex-col justify-start items-center border-b border-black mt-8">
-          <div className="w-[85%] flex flex-row pt-8">
+      <div className="w-[full] flex flex-1 justify-center ">
+        <div className="w-full flex flex-col justify-start items-center">
+          <div className="w-[85%] flex flex-row pt-4">
             <span className="text-2xl font-semibold pl-4 pb-4">
               # Over het Leerhuis
             </span>
           </div>
 
-          <div
-            className="overons w-[85%] flex justify-center font-normal gap-12 border-b border-black rounded-lg max-sm:flex-col z-5 p-8"
-          >
+          <div className="overons w-[85%] flex justify-center font-normal gap-12 rounded-lg max-sm:flex-col z-5 p-8">
             <div className="w-1/2 flex flex-col justify-start leading-2 text-lg max-sm:w-full">
-              <span className="w-full flex justify-center font-semibold pb-2 mb-2 border-b border-black">
+              <span className="w-full flex justify-center font-semibold pb-2 mb-4">
                 Leven in een complexe wereld
               </span>
               <p>
@@ -79,7 +77,7 @@ const Overons = () => {
         </div>
       </div>
 
-      <div className="w-[150px] h-full border-l border-black flex justify-center items-center max-calendar:hidden"></div>
+      <div className="w-[150px] h-[750px] border-l border-black flex justify-center items-center max-calendar:hidden"></div>
     </div>
   );
 }

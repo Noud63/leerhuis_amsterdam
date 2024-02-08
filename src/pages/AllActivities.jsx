@@ -15,7 +15,7 @@ const AllActivities = () => {
       <div className="w-[150px] border-r border-black flex justify-center items-center max-calendar:hidden"></div>
 
       <div className="w-full flex flex-1 justify-center items-center flex-col mb-40">
-        <div className="w-[85%] flex flex-row gap-2 pl-4 mb-6 border-t border-black pt-12 max-calendar:w-full max-calendar:border-0">
+        <div className="w-[85%] flex flex-row gap-2 pl-4 mb-6 pt-12 max-calendar:w-full max-calendar:border-0">
           <img src={calendar} alt="calendar" className="w-[28px]" />
           <span className="text-2xl font-semibold pt-1 max-xsm:text-xl">
             Activiteiten Kalender 2024

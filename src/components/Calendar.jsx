@@ -32,7 +32,7 @@ const Calendar = () => {
       </div>
 
       <div className="w-full flex flex-1 justify-center items-center flex-col">
-        <div className="w-[85%] flex flex-row gap-2 pl-4 mb-6 border-t border-black pt-12 max-calendar:w-full max-calendar:border-0">
+        <div className="w-[85%] flex flex-row gap-2 pl-4 mb-6 pt-12 max-calendar:w-full max-calendar:border-0">
           <span className="text-2xl font-semibold pt-1 max-xsm:text-xl">
             # Activiteiten Kalender 2024
           </span>
