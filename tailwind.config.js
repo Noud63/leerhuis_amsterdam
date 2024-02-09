@@ -10,6 +10,8 @@ export default {
       screens: {
         
         calendar: "1160px",
+        calendargrid: "890px",
+        contact: "580px",
         xsm: "460px"
       },
     },

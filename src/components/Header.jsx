@@ -16,7 +16,7 @@ const Header = () => {
       className={`${
         scrolled ? "-translate-y-[130px]" : "translate-y-0 delay-100"
       }
-    header w-full flex justify-between fixed top-0 z-10 border-b border-slate-800 transform ease-in-out duration-500 max-sm:h-[90px]`}
+    header w-full max-w-[2000px] flex justify-between fixed top-0 z-10 border-b border-slate-800 transform ease-in-out duration-500 max-sm:h-[90px]`}
     >
       <Link
         to="/"

@@ -5,20 +5,20 @@ import { Link } from 'react-router-dom';
 const Overons = () => {
 
   return (
-    <div className="w-full flex justify-center items-center flex-row">
-      <div className="w-[150px] h-[750px] border-r border-black flex justify-center items-center max-calendar:hidden"></div>
+    <div className="w-full h-[770px] flex justify-center items-center flex-row max-calendar:h-auto">
+      <div className="w-[150px] h-full border-r border-l border-black flex justify-center items-center max-calendar:hidden"></div>
 
-      <div className="w-[full] flex flex-1 justify-center ">
-        <div className="w-full flex flex-col justify-start items-center">
-          <div className="w-[85%] flex flex-row pt-4">
+      <div className="w-[full] flex flex-1 justify-center">
+        <div className="w-[85%] flex flex-col justify-start items-center border-b border-black pb-28 mt-4">
+          <div className="w-full flex flex-row pt-4">
             <span className="text-2xl font-semibold pl-4 pb-4">
               # Over het Leerhuis
             </span>
           </div>
 
-          <div className="overons w-[85%] flex justify-center font-normal gap-12 rounded-lg max-sm:flex-col z-5 p-8">
-            <div className="w-1/2 flex flex-col justify-start leading-2 text-lg max-sm:w-full">
-              <span className="w-full flex justify-center font-semibold pb-2 mb-4">
+          <div className="overons w-full flex justify-center font-normal gap-12 rounded-lg max-calendar:flex-col z-5 p-8 bg-[url('./assets/images/map.png')] bg-no-repeat bg-center">
+            <div className="w-1/2 flex flex-col justify-start leading-2 text-lg max-sm:w-full max-calendar:w-full">
+              <span className="w-full flex justify-center text-xl font-semibold pb-2 mb-4 border-b border-black">
                 Leven in een complexe wereld
               </span>
               <p>
@@ -31,7 +31,6 @@ const Overons = () => {
                 cursussen, in de Muiderkerk, waarin deze werelden elkaar
                 ontmoeten.
               </p>
-              <br />
               {/* <p>
                 Leerhuis Amsterdam nodigt je uit voor 'moedige egesprekken' met
                 het oog op vragen, over hoe we met elkaar zinvol kunnen
@@ -55,7 +54,7 @@ const Overons = () => {
                 <br />
                 We kijken naar jullie uit!
               </p> */}
-              <Link to="" className="w-full flex justify-center mt-20">
+              <Link to="" className="w-full flex justify-center mt-16">
                 <button
                   type="button"
                   className="btn w-[150px] bg-black p-1 text-[#000] rounded-full"
@@ -66,7 +65,7 @@ const Overons = () => {
                 </button>
               </Link>
             </div>
-            <div className="w-1/2 flex justify-center leading-2 text-md rounded-lg -z-5 object-cover">
+            <div className="w-1/2 flex justify-center leading-2 text-md rounded-lg -z-5 object-cover max-calendar:w-full">
               <img
                 src={globe}
                 alt="street"
@@ -77,7 +76,7 @@ const Overons = () => {
         </div>
       </div>
 
-      <div className="w-[150px] h-[750px] border-l border-black flex justify-center items-center max-calendar:hidden"></div>
+      <div className="w-[150px] h-full border-r border-l border-black flex justify-center items-center max-calendar:hidden"></div>
     </div>
   );
 }

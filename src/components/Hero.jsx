@@ -3,7 +3,7 @@ import wandelaars from "../assets/images/wandelaars2.png";
 
 const Hero = () => {
   return (
-    <div className="w-full flex flex-1 justify-center items-center flex-col mt-40 max-sm:mt-36 max-xsm:mt-24">
+    <div className="w-full flex flex-1 justify-center items-center flex-col mt-40 max-sm:mt-24">
       <div
         className="w-[85%] flex justify-center items-center flex-col 
       max-calendar:w-[85%] mt-8 border-b border-black"

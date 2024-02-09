@@ -8,7 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AllActivities from "./pages/AllActivities";
 import InfoCalendarItem from "./pages/InfoCalendarItem";
 import Subscribe from "./pages/Subscribe";
-
+import Contact from "./pages/Contact";
 
 
 const router = createBrowserRouter([
@@ -24,16 +24,20 @@ const router = createBrowserRouter([
         element: <Aktueel />,
       },
       {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
         path: "/allactivities",
         element: <AllActivities />,
       },
       {
-        path: "allactivities/infocalendaritem/:id",
+        path: "/allactivities/infocalendaritem/:id",
         element: <InfoCalendarItem />,
       },
       {
-        path: "subscribe", 
-        element: <Subscribe />
+        path: "/subscribe/:id",
+        element: <Subscribe />,
       },
       {
         path: "/infocalendaritem/:id",

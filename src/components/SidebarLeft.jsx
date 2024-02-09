@@ -8,7 +8,7 @@ const SidebarLeft = () => {
 
   return (
     <div className="w-[150px] max-calendar:hidden overflow-visible relative">
-      <div className="w-full absolute h-full top-0 border-r border-black">
+      <div className="w-full absolute h-full top-0 border-r border-l border-black">
         <div
           className={`${
             scrolled
@@ -27,26 +27,29 @@ const SidebarLeft = () => {
             </button>
           </div>
 
-          <div className="w-[100px] flex justify-center">
-            <button
-              type="button"
-              className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
-            >
-              <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
-                contact
-              </div>
-            </button>
-          </div>
+          <Link to="/contact">
+            <div className="w-[100px] flex justify-center">
+              <button
+                type="button"
+                className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
+              >
+                <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
+                  contact
+                </div>
+              </button>
+            </div>
+          </Link>
+
           <Link to="allactivities">
             <div className="w-[100px] flex justify-center">
-                <button
-                  type="button"
-                  className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
-                >
-                  <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
-                    acitiviteit
-                  </div>
-                </button>
+              <button
+                type="button"
+                className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
+              >
+                <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
+                  acitiviteit
+                </div>
+              </button>
             </div>
           </Link>
 
