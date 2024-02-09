@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="w-full flex flex-1 justify-center items-center flex-col mt-40 max-sm:mt-24">
       <div
         className="w-[85%] flex justify-center items-center flex-col 
-      max-calendar:w-[85%] mt-8 border-b border-black"
+      max-calendar:w-[85%] mt-8 border-b border-black "
       >
         <span
           className="w-full flex justify-center flex-col items-center bg-transparent font-papyrus text-black

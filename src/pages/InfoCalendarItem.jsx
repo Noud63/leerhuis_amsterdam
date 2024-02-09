@@ -14,16 +14,19 @@ const url = window.location.pathname
 const item = activities.activities[id]
 
   return (
-    <div className="w-full h-[1280px] flex items-center flex-row max-calendar:h-auto">
+    <div className="w-full h-[1280px] flex items-center flex-row max-calendar:h-auto bg-[url('./assets/images/map_adam.png')] bg-no-repeat bg-cover">
       <div className="w-[150px] h-full border-r border-l border-black max-calendar:hidden"></div>
 
       <div className="flex flex-1 flex-col items-center mt-20 max-calendar:mt-12">
         <div className="w-[700px] mb-32 flex flex-col items-center max-calendar:w-[85%]">
-          <div className="w-full flex justify-start pl-4 text-xl font-semibold mb-4 pt-0">
+          <div className="w-full flex justify-start pl-4 text-xl font-semibold mb-4">
             # Over {item.title}
           </div>
 
-          <div className="w-full calendar_item rounded-2xl p-2" key={item.id}>
+          <div
+            className="calendar_item  w-full calendar_item rounded-2xl p-2"
+            key={item.id}
+          >
             <div className="w-full h-auto bg-black rounded-xl text-[#ef8b39] px-4 pb-4 pt-4 flex flex-col gap-4">
               <span className="flex font-bold border-b border-[#ef8b39] pb-2">
                 <img src={logo} alt="logo" className="w-[40px]" />

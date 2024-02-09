@@ -4,7 +4,7 @@ import logo from "../assets/icons/leerhuislogoblack.png"
 
 const Contact = () => {
   return (
-    <div className="w-full h-[800px] flex justify-start items-start flex-row max-calendar:w-[100%]">
+    <div className="w-full h-[800px] flex justify-start items-start flex-row max-calendar:w-[100%] bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right">
       <div className="w-[150px] h-full border-r border-l border-black flex justify-center items-center max-calendar:hidden"></div>
 
       <div className="flex flex-1 mt-24 justify-center">
@@ -13,7 +13,7 @@ const Contact = () => {
             # Hier kun je ons bereiken:
           </span>
 
-          <div className="w-[85%] flex flex-row justify-start max-contact:flex-col max-contact:gap-4">
+          <div className="w-full flex flex-row justify-start max-contact:flex-col max-contact:gap-4">
             <div className="w-[175px]">
               <img src={logo} alt="logo" className="" />
             </div>
