@@ -1,7 +1,7 @@
 import React from 'react'
 import globe from "../assets/images/globe.jpg"
 import { Link } from 'react-router-dom';
-
+import video from "../assets/vids/ratrace.mp4"
 const Overons = () => {
 
   return (
@@ -10,7 +10,7 @@ const Overons = () => {
 
       <div className="w-[full] flex flex-1 justify-center">
         <div className="w-[85%] flex flex-col justify-start items-center border-b border-black pb-28 mt-4">
-          <div className="w-full flex flex-row pt-4">
+          <div className="w-full flex flex-row pt-4 rounded-lg">
             <span className="text-2xl font-semibold pl-4 pb-4">
               # Over het Leerhuis
             </span>
@@ -66,10 +66,11 @@ const Overons = () => {
               </Link>
             </div>
             <div className="w-1/2 flex justify-center leading-2 text-md rounded-lg -z-5 object-cover max-calendar:w-full">
+              {/* <video src={video} width="800" height="400" controls /> */}
               <img
                 src={globe}
                 alt="street"
-                className="globe object-cover rounded-lg"
+                className="globe object-cover rounded-lg opacity-90"
               />
             </div>
           </div>

@@ -11,6 +11,8 @@ const { id } = useParams()
 
 const url = window.location.pathname
 
+
+
 const item = activities.activities[id]
 
   return (
@@ -24,7 +26,7 @@ const item = activities.activities[id]
           </div>
 
           <div
-            className="calendar_item  w-full calendar_item rounded-2xl p-2"
+            className="calendar_item w-full calendar_item rounded-2xl p-2"
             key={item.id}
           >
             <div className="w-full h-auto bg-black rounded-xl text-[#ef8b39] px-4 pb-4 pt-4 flex flex-col gap-4">
@@ -34,6 +36,7 @@ const item = activities.activities[id]
               <span className="w-full border-b border-[#ef8b39] flex justify-between font-bold mb-2 text-xl pb-2">
                 {item.title}
               </span>
+              
               <span className="w-full">
                 <span className="font-bold">Datum: </span>
                 {item.date}
