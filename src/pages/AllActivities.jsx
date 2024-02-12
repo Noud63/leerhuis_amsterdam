@@ -23,7 +23,7 @@ const AllActivities = () => {
         </div>
 
         <div className="w-[85%] grid grid-cols-3 gap-4 max-2xl:grid-cols-2 max-calendargrid:grid-cols-1 max-calendar:w-full">
-          {activities.activities.map((act) => (
+          {activities.activities &&activities.activities.map((act) => (
             <div className="calendar_item w-full rounded-2xl p-2" key={act.id}>
               <div className="w-full h-full bg-black rounded-xl text-[#ef8b39] px-4 pb-4 pt-4 flex flex-col justify-between gap-2">
                 <span className="w-full flex font-bold border-b border-[#ef8b39] pb-2">

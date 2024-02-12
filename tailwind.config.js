@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {},
       fontFamily: {
-        papyrus: ["PAPYRUS"],
+        papyrus: ['papyrus'],
       },
       screens: {
         
