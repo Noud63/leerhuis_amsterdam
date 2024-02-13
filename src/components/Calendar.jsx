@@ -26,22 +26,21 @@ const Calendar = () => {
 
  
   return (
-    <div className="w-full flex flex-row m-auto max-calendar:w-[85%]">
+    <div className="w-full flex flex-row m-auto">
       <div className="w-[150px] border-r border-l border-black flex justify-center items-center max-calendar:hidden"></div>
 
       <div className="w-full flex flex-1 justify-center items-center flex-col">
-        <div className="w-[85%] flex flex-row gap-2 pl-4 mb-6 pt-12 max-calendar:w-full max-calendar:border-0">
+        <div className="w-[85%] flex flex-row gap-2 pl-4 mb-6 pt-12 max-calendar:border-0 max-calendargrid:w-[95%]">
           <span className="text-2xl font-semibold pt-1 max-xsm:text-xl">
             # Activiteiten Kalender 2024
           </span>
         </div>
 
         <div
-          className={`w-[85%] grid grid-cols-${slice} gap-4 max-2xl:grid-cols-2 max-calendargrid:grid-cols-1 max-calendar:w-full`}
+          className={`w-[85%] grid grid-cols-${slice} gap-4 max-2xl:grid-cols-2 max-calendargrid:grid-cols-1 max-calendargrid:w-[95%]`}
         >
-          {activities.activities && activities.activities
-            .slice(0, slice)
-            .map((act) => (
+          {activities.activities &&
+            activities.activities.slice(0, slice).map((act) => (
               <div
                 className="calendar_item_shadow w-full rounded-2xl p-2"
                 key={act.id}
@@ -93,7 +92,7 @@ const Calendar = () => {
             ))}
         </div>
 
-        <div className="w-[85%] flex justify-center mt-16 border-b border-black pb-16 mb-8 max-calendar:w-full">
+        <div className="w-[85%] flex justify-center mt-16 border-b border-black pb-16 mb-8 max-calendar:w-full max-calendargrid:w-[95%]">
           <Link to="allactivities">
             <button
               type="button"

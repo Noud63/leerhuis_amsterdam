@@ -19,9 +19,9 @@ const SidebarLeft = () => {
           <div className="w-[100px] flex justify-center">
             <button
               type="button"
-              className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
+              className="w-[190px] bg-black p-1 rounded-full cursor-pointer"
             >
-              <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
+              <div className="bg-black flex flex-row justify-center items-center rounded-full p-1 border-2 border-[#ef8b39] text-[#f19a53] gap-2">
                 over ons
               </div>
             </button>
@@ -31,9 +31,9 @@ const SidebarLeft = () => {
             <div className="w-[100px] flex justify-center">
               <button
                 type="button"
-                className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
+                className="w-[190px] bg-black p-1 rounded-full cursor-pointer"
               >
-                <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
+                <div className="bg-black flex flex-row justify-center items-center rounded-full p-1 border-2 border-[#ef8b39] text-[#f19a53] gap-2">
                   contact
                 </div>
               </button>
@@ -44,9 +44,9 @@ const SidebarLeft = () => {
             <div className="w-[100px] flex justify-center">
               <button
                 type="button"
-                className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
+                className="w-[190px] bg-black p-1 rounded-full cursor-pointer"
               >
-                <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
+                <div className="bg-black flex flex-row justify-center items-center rounded-full p-1 border-2 border-[#ef8b39] text-[#f19a53] gap-2">
                   acitiviteit
                 </div>
               </button>
@@ -56,9 +56,9 @@ const SidebarLeft = () => {
           <div className="w-[100px] flex justify-center">
             <button
               type="button"
-              className="w-[190px] bg-black p-1 text-[#000] rounded-full cursor-pointer"
+              className="w-[190px] bg-black p-1 rounded-full cursor-pointer"
             >
-              <div className="rounded-full p-1 border-2 border-[#000] text-[#ef8b39] font-semibold">
+              <div className="bg-black flex flex-row justify-center items-center rounded-full p-1 border-2 border-[#ef8b39] text-[#f19a53] gap-2">
                 archief
               </div>
             </button>

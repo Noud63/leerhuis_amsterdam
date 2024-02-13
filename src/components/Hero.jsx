@@ -1,16 +1,17 @@
 import React from 'react'
 import wandelaars from "../assets/images/wandelaars2.png";
+import video from "../assets/vids/ratrace.mp4"
 
 const Hero = () => {
   return (
     <div className="w-full flex flex-1 justify-center items-center flex-col mt-40 max-sm:mt-24">
       <div
         className="w-[85%] flex justify-center items-center flex-col 
-      max-calendar:w-[85%] mt-8 border-b border-black "
+     mt-8 border-b border-black max-calendargrid:w-[95%]"
       >
         <span
           className="w-full flex justify-center flex-col items-center bg-transparent font-papyrus text-black
-        text-[3.7rem] tracking-widest pb-2 max-xl:text-[3rem] max-sm:text-4xl max-xsm:text-[27px]"
+        text-[3.7rem] tracking-widest pb-2 max-xl:text-[3rem] max-sm:text-[2.5rem] max-xsm:text-[1.9rem]"
         >
           Leerhuis Amsterdam
           <span
@@ -20,11 +21,12 @@ const Hero = () => {
             voor zinvol samenleven
           </span>
         </span>
-        <img
+        {/* <video src={video} width="1980" height="400" controls /> */}
+         <img
           src={wandelaars}
           alt="wandelaars"
           className="w-full max-w-[900px]"
-        />
+       /> 
       </div>
     </div>
   );

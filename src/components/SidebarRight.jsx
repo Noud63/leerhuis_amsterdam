@@ -20,7 +20,7 @@ const SidebarRight = () => {
           } w-full mb-28 flex justify-center items-center flex-col gap-16`}
         >
           <div className="w-[40px] border border-black h-[40px] text-[#ff3355] text-md rounded-full flex justify-center items-center cursor-pointer">
-            <img src={linkedin} alt="" />
+            <img src={linkedin} alt=""/>
           </div>
           <div className="w-[40px] border border-black h-[40px] text-[#ff3355] text-md rounded-full flex justify-center items-center cursor-pointer">
             <img src={facebook} alt="" />

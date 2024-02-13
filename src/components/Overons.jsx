@@ -9,7 +9,7 @@ const Overons = () => {
       <div className="w-[150px] h-full border-r border-l border-black flex justify-center items-center max-calendar:hidden"></div>
 
       <div className="w-[full] flex flex-1 justify-center">
-        <div className="w-[85%] flex flex-col justify-start items-center border-b border-black pb-28 mt-4">
+        <div className="w-[85%] flex flex-col justify-start items-center border-b border-black pb-28 mt-4 max-calendargrid:w-[95%]">
           <div className="w-full flex flex-row pt-4 rounded-lg">
             <span className="text-2xl font-semibold pl-4 pb-4">
               # Over het Leerhuis
@@ -18,7 +18,7 @@ const Overons = () => {
 
           <div className="overons w-full flex justify-center font-normal gap-12 rounded-lg max-calendar:flex-col z-5 p-8 bg-[url('./assets/images/map.png')] bg-no-repeat bg-center">
             <div className="w-1/2 flex flex-col justify-start leading-2 text-lg max-sm:w-full max-calendar:w-full">
-              <span className="w-full flex justify-center text-xl font-semibold pb-2 mb-4 border-b border-black">
+              <span className="w-full flex justify-center text-xl font-semibold pb-4 mb-4 border-b border-black">
                 Leven in een complexe wereld
               </span>
               <p>
