@@ -1,17 +1,24 @@
-
+import React,{useEffect, useState} from 'react'
 import calendar from "../assets/icons/calendar-icon.svg";
 import BackButton from '../components/BackButton';
-import activities from "../db.json";
 import { Link } from 'react-router-dom';
 import logo from "../assets/icons/leerhuislogo.png";
+import getJsonData from "../utils/getJsonData";
+import { useLoaderData } from "react-router-dom";
 
+export const loader = () => {
+  const data = getJsonData();
+  return data;
+};
 
 const AllActivities = () => {
 
   const url = window.location.pathname;
+
+  const data = useLoaderData()
   
   return (
-    <div className="w-[100%] flex flex-row m-auto max-calendar:w-[85%] bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right-bottom">
+    <div className="w-full flex flex-row m-auto max-calendar:w-[85%] bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right-bottom max-calendargrid:w-[95%]">
       <div className="w-[150px] border-r border-l border-black flex justify-center items-center max-calendar:hidden"></div>
 
       <div className="w-full flex flex-1 justify-center items-center flex-col mb-40">
@@ -23,8 +30,7 @@ const AllActivities = () => {
         </div>
 
         <div className="w-[85%] grid grid-cols-3 gap-4 max-2xl:grid-cols-2 max-calendargrid:grid-cols-1 max-calendar:w-full">
-          {activities.activities &&
-            activities.activities.map((act) => (
+          {data?.map((act) => (
               <div
                 className="calendar_item w-full rounded-2xl p-2"
                 key={act.id}

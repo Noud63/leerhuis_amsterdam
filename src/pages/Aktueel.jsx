@@ -9,7 +9,7 @@ const Aktueel = () => {
 
       <div className="w-[85%] h-full flex flex-1 flex-col justify-center items-center">
         <div className="w-[85%] h-full flex flex-col justify-start items-center border-b border-black mt-12">
-          <div className="w-full flex flex-row border-t border-black pt-8">
+          <div className="w-full flex flex-row border-b border-black pt-8 pb-4">
             <span className="text-2xl font-semibold pl-2">
               # Aankomende en lopende activiteiten:
             </span>

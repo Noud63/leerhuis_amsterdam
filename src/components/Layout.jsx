@@ -6,7 +6,6 @@ import SidebarRight from "./SidebarRight.jsx";
 import SidebarLeft from "./SidebarLeft.jsx";
 import Footer from "./Footer.jsx";
 import { Outlet } from 'react-router-dom';
-import { useRef } from 'react';
 
 const Layout = () => {
 

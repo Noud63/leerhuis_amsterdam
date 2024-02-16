@@ -1,6 +1,6 @@
 import React from 'react'
-import wandelaars from "../assets/images/wandelaars2.png";
-import video from "../assets/vids/ratrace.mp4"
+import wandelaars from "../assets/images/wandelaars1.png";
+import video from "../assets/vids/crowd2.mp4"
 
 const Hero = () => {
   return (
@@ -22,11 +22,11 @@ const Hero = () => {
           </span>
         </span>
         {/* <video src={video} width="1980" height="400" controls /> */}
-         <img
+        <img
           src={wandelaars}
           alt="wandelaars"
-          className="w-full max-w-[900px]"
-       /> 
+          className="w-full max-w-[1000px]"
+        />
       </div>
     </div>
   );

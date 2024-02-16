@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: 'papyrus';
-  src: url('../public/fonts/papyrus.ttf') format('truetype'), 
-       url('../public/fonts/papyrus.otf') format('otf'),
-       url('../public/fonts/papyrus.svg') format('svg'),
-       url('../public/fonts/papyrus.woff') format('woff'),
-       url('../public/fonts/papyrus.woff2') format('woff2');
+  src: url('./fonts/papyrus.ttf') format('truetype'), 
+       url('./fonts/papyrus.otf') format('otf'),
+       url('./fonts/papyrus.svg') format('svg'),
+       url('./fonts/papyrus.woff') format('woff'),
+       url('./fonts/papyrus.woff2') format('woff2');
 }
 
 body {

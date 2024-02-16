@@ -29,15 +29,17 @@ const Header = () => {
           </div>
         </Link>
 
-
-        <Link to="/" className=" flex flex-1 justify-center items-center max-sm:hidden">
+        <Link
+          to="/"
+          className=" flex flex-1 justify-center items-center max-sm:hidden"
+        >
           <img src={home} alt="home" className="w-[35px]" />
         </Link>
       </div>
 
       <div className="sub_header w-1/2 h-[130px] border-l border-black text-4xl flex justify-between max-sm:flex-1 max-sm:h-[90px]">
         <Link to="aktueel" className="flex flex-1">
-          <div className="flex flex-1 justify-center items-center cursor-pointer ">
+          <div className="flex flex-1 justify-center items-center cursor-pointer">
             <img
               src={pointingfinger}
               alt=""

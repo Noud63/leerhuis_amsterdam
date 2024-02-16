@@ -12,8 +12,6 @@ const { id } = useParams()
 
 const url = window.location.pathname
 
-
-
 const item = activities.activities[id]
 
   return (

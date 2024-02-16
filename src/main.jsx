@@ -9,7 +9,30 @@ import AllActivities from "./pages/AllActivities";
 import InfoCalendarItem from "./pages/InfoCalendarItem";
 import Subscribe from "./pages/Subscribe";
 import Contact from "./pages/Contact";
+import { loader } from "./components/Calendar";
 
+// const createArray = () => {
+//   let arrayOfObjects = [];
+
+//   for (let i = 0; i <= 100; i++) {
+//     let obj = {
+//       "id": i,
+//       "title": "",
+//       "date": "", // replace with actual date
+//       "time": "", // replace with actual time
+//       "description": "",
+//       "led_by": "",
+//       "image": "", // replace with actual image name
+//       "starting_date": "", // replace with actual starting date
+//     };
+
+//     arrayOfObjects.push(obj);
+//   }
+
+//   console.log(arrayOfObjects);
+// }
+
+// createArray()
 
 const router = createBrowserRouter([
   {
@@ -17,6 +40,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        loader: loader,
         element: <Root />,
       },
       {
@@ -29,6 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/allactivities",
+        loader: loader,
         element: <AllActivities />,
       },
       {

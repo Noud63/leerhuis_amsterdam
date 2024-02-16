@@ -7,7 +7,7 @@ const SidebarLeft = () => {
   const scrolled = scroll()
 
   return (
-    <div className="w-[150px] max-calendar:hidden overflow-visible relative">
+    <div className="w-[150px] max-calendar:hidden relative">
       <div className="w-full absolute h-full top-0 border-r border-l border-black">
         <div
           className={`${
@@ -15,7 +15,7 @@ const SidebarLeft = () => {
               ? "mt-32 transform ease-in-out duration-1000"
               : "mt-44 transform ease-in-out duration-1000"
           } w-full mb-28 flex justify-start items-center flex-col gap-16`}
-        >
+            >
           <div className="w-[100px] flex justify-center">
             <button
               type="button"

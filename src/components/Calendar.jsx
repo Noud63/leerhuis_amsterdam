@@ -1,12 +1,20 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom';
-import  activities from '../db.json'
 import logo from "../assets/icons/leerhuislogo.png";
+import getJsonData from "../utils/getJsonData"
+import { useLoaderData } from 'react-router-dom';
+
+export const loader = () => {
+  const data = getJsonData()
+  return data
+}
 
 const Calendar = () => {
 
   const [ slice, setSlice] = useState(3)
   const [ width, setWidth] = useState(window.innerWidth)
+
+  const data = useLoaderData()
 
   useEffect(() => {
     const handleResize = () => {
@@ -39,8 +47,7 @@ const Calendar = () => {
         <div
           className={`w-[85%] grid grid-cols-${slice} gap-4 max-2xl:grid-cols-2 max-calendargrid:grid-cols-1 max-calendargrid:w-[95%]`}
         >
-          {activities.activities &&
-            activities.activities.slice(0, slice).map((act) => (
+          {data?.slice(0, slice).map((act) => (
               <div
                 className="calendar_item_shadow w-full rounded-2xl p-2"
                 key={act.id}
@@ -80,7 +87,7 @@ const Calendar = () => {
                   >
                     <button
                       type="button"
-                      className="btn w-[150px] bg-black p-1 text-[#000] rounded-full"
+                      className="w-[150px] bg-black p-1 text-[#000] rounded-full"
                     >
                       <div className="bg-black flex flex-row justify-center items-center rounded-full p-2 border-2 border-[#ef8b39] text-[#f19a53] gap-2">
                         <span>Lees meer</span>

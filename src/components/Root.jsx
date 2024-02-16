@@ -6,7 +6,7 @@ import Contact from '../pages/Contact';
 const Root = () => {
  
   return (
-    <div className="bg-[url('./assets/images/map_adam2.png')] bg-no-repeat bg-right-bottom">
+    <div className="">
       <Calendar />
       <Overons />
       <Contact />
