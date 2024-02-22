@@ -17,7 +17,7 @@ const Calendar = () => {
   const data = useLoaderData()
 
   useEffect(() => {
-    const handleResize = () => {
+    const handleResize = () => { 
       setWidth(window.innerWidth);
     };
     window.addEventListener("resize", handleResize)

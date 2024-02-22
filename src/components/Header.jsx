@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react'
 import logo from "../assets/icons/leerhuislogo.png"
 import pointingfinger from '../assets/icons/pointing_finger.png'
 import scroll from '../utils/scroll'
@@ -38,16 +37,16 @@ const Header = () => {
       </div>
 
       <div className="sub_header w-1/2 h-[130px] border-l border-black text-4xl flex justify-between max-sm:flex-1 max-sm:h-[90px]">
-        <Link to="aktueel" className="flex flex-1">
-          <div className="flex flex-1 justify-center items-center cursor-pointer">
+        <div className="w-full flex flex-1 justify-center items-center">
+          <Link to="aktueel" className="flex flex-1 justify-center items-center">
             <img
               src={pointingfinger}
               alt=""
               className="w-[40px] mr-2 transition ease-in duration-300 hover:translate-x-2"
             />
             <span className="text-2xl max-sm:text-xl">Aktueel</span>
-          </div>
-        </Link>
+          </Link>
+        </div>
 
         <div className="w-[150px] h-[130px] flex justify-center border-l border-black items-center flex-col max-xl:border-l max-sm:h-[90px] max-sm:text-2xl max-xsm:w-[90px]">
           <span className="font-bold">{day}</span>

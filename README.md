@@ -1,3 +1,3 @@
 # React + Vite
 
-![la](https://github.com/Noud63/leerhuis_amsterdam/assets/38325801/f204ebfb-569f-49dc-8ff3-8df3bf80a822)
+![la_triple](https://github.com/Noud63/leerhuis_amsterdam/assets/38325801/cf9b5b72-3832-4696-ae37-af50d0541116)

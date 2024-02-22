@@ -11,25 +11,13 @@
        url('./fonts/papyrus.woff2') format('woff2');
 }
 
+
 body {
-  margin: 0 auto;
+margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
   max-width: 2000px;
-}
-
-/* body {
-  background-image: radial-gradient(
-    farthest-corner at 40px 40px,
-    #f35 0%,
-    #43e 100%
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-body {
   background-image: radial-gradient(
     farthest-corner at 20% 10%,
     #fff 0%,
@@ -68,7 +56,24 @@ box-shadow: 0px 1px 4px #331100;
 }
 
 .globe {
+ scale: .5; 
+ opacity: 0;
  box-shadow: 0px 1px 4px #5b1e00;
+ animation: fade-in linear forwards;
+ animation-timeline: view();
+ animation-range: 100px 500px;
+}
+
+@keyframes fade-in {
+  from {}
+  to { scale: 1; opacity: 1}
+}
+
+@media only screen and (max-width: 450px){
+  .globe {
+    scale: 1; 
+    opacity: 1;
+  }
 }
 
 
