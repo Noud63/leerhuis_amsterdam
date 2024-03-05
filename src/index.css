@@ -61,7 +61,7 @@ box-shadow: 0px 1px 4px #331100;
  box-shadow: 0px 1px 4px #5b1e00;
  animation: fade-in linear forwards;
  animation-timeline: view();
- animation-range: 100px 500px;
+ animation-range: entry;
 }
 
 @keyframes fade-in {

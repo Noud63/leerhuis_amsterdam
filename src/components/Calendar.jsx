@@ -32,7 +32,6 @@ const Calendar = () => {
     } 
   }, [width]);
 
- 
   return (
     <div className="w-full flex flex-row m-auto">
       <div className="w-[150px] border-r border-l border-black flex justify-center items-center max-calendar:hidden"></div>
@@ -44,59 +43,67 @@ const Calendar = () => {
           </span>
         </div>
 
+        <div className="w-[85%] mb-8 pl-4 max-calendargrid:w-[95%]">
+          <span className="text-xl">
+            Het Leerhuis Amsterdam organiseert bijeenkomsten, dialogen en
+            cursussen, in de Muiderkerk. <br />
+            Schrijf je in voor een of meerdere activiteiten.
+          </span>
+        </div>
+
         <div
           className={`w-[85%] grid grid-cols-${slice} gap-4 max-2xl:grid-cols-2 max-calendargrid:grid-cols-1 max-calendargrid:w-[95%]`}
         >
           {data?.slice(0, slice).map((act) => (
+            <div
+              className="calendar_item_shadow w-full rounded-2xl p-2"
+              key={act.id}
+            >
               <div
-                className="calendar_item_shadow w-full rounded-2xl p-2"
-                key={act.id}
+                className={`bg-black calendar_item w-full h-full rounded-xl text-[#ef8b39] px-4 pb-4 pt-4 flex flex-col justify-between gap-2`}
               >
-                <div className="calendar_item cw-full h-full bg-black rounded-xl text-[#ef8b39] px-4 pb-4 pt-4 flex flex-col justify-between gap-2">
-                  <span className="w-full flex justify-between font-bold border-b border-[#ef8b39] pb-2">
-                    <img src={logo} alt="logo" className="w-[40px]" />
-                  </span>
-                  <span className="w-full border-b border-[#ef8b39] flex justify-between font-bold mb-2 text-xl pb-2">
-                    {act.title}
-                  </span>
-                  <span className="w-full">
-                    <span className="font-bold">Datum: </span>
-                    {act.date}
-                  </span>
-                  <span className="w-full">
-                    {" "}
-                    <span className="font-bold">Tijd:</span> {act.time}
-                  </span>
+                <span className="w-full flex justify-between font-bold border-b border-[#ef8b39] pb-2">
+                  <img src={logo} alt="logo" className="w-[40px]" />
+                </span>
+                <span className="w-full border-b border-[#ef8b39] flex justify-between font-bold mb-2 text-xl pb-2">
+                  {act.title}
+                </span>
+                <span className="w-full">
+                  <span className="font-bold">Start: </span>
+                  {new Date(act.starting_date).toLocaleDateString()}
+                </span>
+                <span className="w-full">
+                  {" "}
+                  <span className="font-bold">Tijd:</span> {act.time}
+                </span>
 
-                  <span className="w-full">
-                    {" "}
-                    <span className="font-bold">O.l.v:</span> {act.led_by}
-                  </span>
+                <span className="w-full">
+                  {" "}
+                  <span className="font-bold">O.l.v:</span> {act.led_by}
+                </span>
 
-                  <div className="w-full flex justify-center items-center mt-4">
-                    <img
-                      src={`/images/${act.image}`}
-                      alt=""
-                      className="w-full h-auto rounded-lg"
-                    />
-                  </div>
-
-                  <Link
-                    to={`infocalendaritem/${act.id}`}
-                    className="w-full flex justify-center pt-2"
-                  >
-                    <button
-                      type="button"
-                      className="w-[150px] bg-black p-1 text-[#000] rounded-full"
-                    >
-                      <div className="bg-black flex flex-row justify-center items-center rounded-full p-2 border-2 border-[#ef8b39] text-[#f19a53] gap-2">
-                        <span>Lees meer</span>
-                      </div>
-                    </button>
-                  </Link>
+                <div className="w-full flex justify-center items-center mt-4">
+                  <img
+                    src={`/images/${act.image}`}
+                    alt=""
+                    className="w-full h-auto rounded-lg"
+                  />
                 </div>
+
+                <Link
+                  to={`infocalendaritem/${act.id}`}
+                  className="w-full flex justify-center pt-2"
+                >
+                  <button
+                    type="button"
+                    className="w-[150px] bg-black flex justify-center items-center rounded-full p-2 border-2 border-[#ef8b39] text-[#f19a53]"
+                  >
+                    Lees meer
+                  </button>
+                </Link>
               </div>
-            ))}
+            </div>
+          ))}
         </div>
 
         <div className="w-[85%] flex justify-center mt-16 border-b border-black pb-16 mb-8 max-calendar:w-full max-calendargrid:w-[95%]">
@@ -105,7 +112,7 @@ const Calendar = () => {
               type="button"
               className="btn w-[190px] bg-black p-1 text-[#000] rounded-full"
             >
-              <div className="bg-[#000] rounded-full p-2 border-2 border-[#ef8b39] text-[#f19a53]">
+              <div className="bg-black rounded-full p-2 border-2 border-[#ef8b39] text-[#f19a53]">
                 Alle activiteiten
               </div>
             </button>

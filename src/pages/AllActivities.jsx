@@ -43,8 +43,10 @@ const AllActivities = () => {
                     {act.title}
                   </span>
                   <span className="w-full">
-                    <span className="font-bold">Datum: </span>
-                    {act.date}
+                    <span className="font-bold">Start: </span>
+                    
+                       <span>{new Date(act.starting_date).toLocaleDateString()} </span>
+                   
                   </span>
                   <span className="w-full">
                     {" "}

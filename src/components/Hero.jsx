@@ -1,6 +1,5 @@
 import React from 'react'
 import wandelaars from "../assets/images/wandelaars1.png";
-import video from "../assets/vids/crowd2.mp4"
 
 const Hero = () => {
   return (
@@ -21,7 +20,7 @@ const Hero = () => {
             voor zinvol samenleven
           </span>
         </span>
-        {/* <video src={video} width="1980" height="400" controls /> */}
+      
         <img
           src={wandelaars}
           alt="wandelaars"
