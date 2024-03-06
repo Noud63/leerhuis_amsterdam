@@ -5,7 +5,10 @@ import activities from "../db.json";
 import { Link } from 'react-router-dom';
 import logo from "../assets/icons/leerhuislogo.png"
 import share from "../assets/icons/share.png"
-import { FacebookShareButton, TwitterShareButton, LinkedinShareButton, FacebookIcon, TwitterIcon, LinkedinIcon } from 'react-share';
+import { FacebookShareButton, TwitterShareButton, LinkedinShareButton,
+  WhatsappShareButton, WhatsappIcon, FacebookIcon, XIcon, LinkedinIcon 
+} from 'react-share';
+
 
 const InfoCalendarItem = () => {
 
@@ -14,7 +17,6 @@ const currentUrl = window.location.href
 const { id } = useParams()
 
 const [expired, setExpired] = useState(false)
-const [openShare, setOpenShare] = useState(false)
 
 const url = window.location.pathname
 
@@ -30,11 +32,6 @@ useEffect(()=> {
    setExpired(false);
  }
 },[givenDate, now])
-
-
-const sharePost = () => {
-   setOpenShare(!openShare)
-}
 
 
   return (
@@ -57,39 +54,41 @@ const sharePost = () => {
                   </span>
                 </div>
               </div>
-              <div className="w-full h-[50px] border-b border-[#ef8b39] flex justify-between items-end font-bold mb-2 text-xl py-2 group overflow-hidden relative">
+              <div className="w-full h-[50px] border-b border-[#ef8b39] flex justify-between items-end font-bold mb-2 text-xl py-2 overflow-hidden relative">
                 {item.title}
-                <div className="flex flex-row gap-2 font-normal">
-                  <span>Deel</span>
-                  <img
-                    src={share}
-                    alt="share"
-                    className="w-[28px] cursor-pointer"
-                    onMouseEnter={sharePost}
-                  />
-                </div>
-                <div className="bg-black h-full flex items-center text-black absolute z-[999] right-0 bottom-0 translate-y-full  py-2 rounded-lg transition duration-500 group-hover:translate-y-0 gap-2">
-                  <span className="cursor-pointer h-full items-center flex">
-                    <FacebookShareButton url={currentUrl}>
-                      <FacebookIcon size={34} round={true} />
-                    </FacebookShareButton>
-                  </span>
-                  <span className="cursor-pointer h-full items-center flex">
-                    <TwitterShareButton url={currentUrl}>
-                      <TwitterIcon size={34} round={true} />
-                    </TwitterShareButton>
-                  </span>
-                  <span className="cursor-pointer h-full items-center flex">
-                    <LinkedinShareButton url={currentUrl}>
-                      <LinkedinIcon size={34} round={true} />
-                    </LinkedinShareButton>
-                  </span>
+                <div className="group">
+                  <div className="flex flex-row gap-2 font-normal">
+                    <span>Deel</span>
+                    <img
+                      src={share}
+                      alt="share"
+                      className="w-[28px] cursor-pointer"
+                    />
+                  </div>
+                  <div className="bg-black h-full flex items-center text-black absolute z-[999] right-0 bottom-0 translate-y-full  py-2 rounded-lg transition duration-500 group-hover:translate-y-0 gap-2">
+                    <span className="cursor-pointer h-full items-center flex">
+                      <FacebookShareButton url={currentUrl}>
+                        <FacebookIcon size={34} round={true} />
+                      </FacebookShareButton>
+                    </span>
+                    <span className="cursor-pointer h-full items-center justify-center flex">
+                      <TwitterShareButton url={currentUrl}>
+                        <XIcon size={34} round={true} />
+                      </TwitterShareButton>
+                    </span>
+                    <span className="cursor-pointer h-full items-center flex">
+                      <WhatsappShareButton url={currentUrl}>
+                        <WhatsappIcon size={34} round={true} />
+                      </WhatsappShareButton>
+                    </span>
+                  </div>
+                  
                 </div>
               </div>
 
               <div className="w-full py-2">
                 <div className="font-bold">Datums:</div>
-                <div className="w-full flex flex-row">
+                <div className="w-full flex flex-row flex-wrap">
                   <span>{item.date.day}:&nbsp;</span>
                   {item.date.dates.map((date, index) => (
                     <span key={index}>{date}&nbsp;</span>
